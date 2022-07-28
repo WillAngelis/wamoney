@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import Modal from 'react-modal';
-import { TransactionsContext, TransactionsProvider } from './TransactionsContext';
+import { useTransactions, TransactionsProvider } from './hooks/useTransactions';
 import { Dashboard } from './components/Dashboard';
 import { Header } from './components/Header';
 import { GlobalStyle } from './styles/global';
