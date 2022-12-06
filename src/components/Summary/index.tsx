@@ -7,6 +7,7 @@ import { useTransactions } from '../../hooks/useTransactions';
 export function Summary() {
   const { transactions } = useTransactions();
 
+
   const summary = transactions.reduce(
     (acc, transaction) => {
       if (transaction.type === 'deposit') {
@@ -26,6 +27,8 @@ export function Summary() {
     }
   );
 
+  const saldoPositivo = summary.total >= 0;
+
   return (
     <Container>
       <div>
@@ -34,9 +37,9 @@ export function Summary() {
           <img src={incomeImg} alt="Entradas" />
         </header>
         <strong>
-          {new Intl.NumberFormat('pt-BR', {
-            style: 'currency',
-            currency: 'BRL',
+          {new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
           }).format(summary.deposits)}
         </strong>
       </div>
@@ -47,23 +50,28 @@ export function Summary() {
           <img src={outcomeImg} alt="Saidas" />
         </header>
         <strong>
-          -
-          {new Intl.NumberFormat('pt-BR', {
-            style: 'currency',
-            currency: 'BRL',
+          {new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
           }).format(summary.withdraws)}
         </strong>
       </div>
 
-      <div className="highlight-background">
+      <div
+        className={
+          saldoPositivo
+            ? "highlight-background-green"
+            : "highlight-background-red"
+        }
+      >
         <header>
           <p>Total</p>
           <img src={totalImg} alt="Total" />
         </header>
         <strong>
-          {new Intl.NumberFormat('pt-BR', {
-            style: 'currency',
-            currency: 'BRL',
+          {new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
           }).format(summary.total)}
         </strong>
       </div>
