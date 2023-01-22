@@ -2,7 +2,7 @@
 # Projeto Wamoney
 
 Wamoney é um Projeto desenvolvido durante o Ignite 2021, curso de especialização em ReactJS da 
-Rocketseat, a proposta era criar com um website para controle de dinheiro.
+Rocketseat, a proposta era criar um website para controle financeiro.
 
 ## Tecnologias usadas
 
