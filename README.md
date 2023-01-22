@@ -35,7 +35,7 @@ Caso positivo é alterado para o background "green"
 
 ## Link para o Website
 
-https://wamoney.vercel.app/
+https://wamoney.netlify.app/
 
 ## Rodando localmente
 
