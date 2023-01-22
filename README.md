@@ -13,22 +13,22 @@ Rocketseat, a proposta era criar com um website para controle de dinheiro.
 
 ## Algumas imagens do projeto
 
-![App Screenshot](./src/github/wamoney_init.gif)
+![App Screenshot](.github/wamoney_init.gif)
 
 Inicialmente o projeto traz uma lista vazia de saidas e entradas mas você pode modificar
 isso preenchendo o array de "transactions", exemplo na imagem a seguir:
 
-![App Screenshot](./src/github/wamoney.png)
+![App Screenshot](.github/wamoney.png)
 
 ## Adicionando uma Saida
 
-![App Screenshot](./src/github/add_saida.gif)
+![App Screenshot](.github/add_saida.gif)
 
 Caso o total for negativo ele assume o background "red"
 
 ## Adicionando uma Entrada
 
-![App Screenshot](./src/github/add_entrada.gif)
+![App Screenshot](.github/add_entrada.gif)
 
 Caso positivo é alterado para o background "green"
 
